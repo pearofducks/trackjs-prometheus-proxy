@@ -1,0 +1,24 @@
+{
+  "name": "trackjs-prometheus-proxy",
+  "version": "1.0.0",
+  "description": "a webapp to download error-rates from TrackJS and serve them as Prometheus metrics",
+  "main": "index.js",
+  "scripts": {
+    "dev": "DEBUG=app:* node -r esm .",
+    "start": "node -r esm ."
+  },
+  "keywords": ["trackJS", "prometheus"],
+  "author": "Dave Honneffer <pearofducks@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "esm": "^3.2.25",
+    "got": "^10.4.0",
+    "koa": "^2.11.0",
+    "koa-route": "^3.2.0",
+    "prom-client": "^11.5.3"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
